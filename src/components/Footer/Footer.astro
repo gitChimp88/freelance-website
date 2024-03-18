@@ -1,4 +1,10 @@
 ---
+const { 'aria-label': testimonial, about, pricing, portfolio, contact } = Astro.props;
+const href = `#${testimonial}`;
+const hrefAbout = `#${about}`
+const hrefPricing = `#${pricing}`
+const hrefPortfolio = `#${portfolio}`
+const hrefContact = `#${contact}`
 import logoTransparent from '../../assets/logo_transparent.png';
 import { Image } from 'astro:assets';
 ---
@@ -36,16 +42,19 @@ import { Image } from 'astro:assets';
               <span class="cs-header">Sitemap</span>
           </li>
           <li class="cs-nav-li">
-              <a class="cs-nav-link" href="">About</a>
+              <a class="cs-nav-link" href={hrefAbout}>About</a>
           </li>
           <li class="cs-nav-li">
-              <a class="cs-nav-link" href="">Services</a>
+              <a class="cs-nav-link" href={hrefPricing}>Services</a>
           </li>
           <li class="cs-nav-li">
-              <a class="cs-nav-link" href="">Portfolio</a>
+            <a class="cs-nav-link" href={href}>Testimonial</a>
+        </li>
+          <li class="cs-nav-li">
+              <a class="cs-nav-link" href={hrefPortfolio}>Portfolio</a>
           </li>
           <li class="cs-nav-li">
-              <a class="cs-nav-link" href="">Contact</a>
+              <a class="cs-nav-link" href={hrefContact}>Contact</a>
           </li>
       </ul>
       <!-- <ul class="cs-nav">
