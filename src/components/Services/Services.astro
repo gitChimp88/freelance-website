@@ -1,3 +1,10 @@
+---
+import mobile from '../../assets/mobile.svg';
+import desktop from '../../assets/desktop.svg';
+import optimization  from '../../assets/optimization.svg';
+import { Image } from 'astro:assets';
+---
+
 <!-- ============================================ -->
 <!--                  Services                    -->
 <!-- ============================================ -->
@@ -16,7 +23,7 @@
               <a href="" class="cs-link">
                   <picture class="cs-picture">
                       <!-- <img class="cs-icon" src="https://csimg.nyc3.digitaloceanspaces.com/Services/hand.svg" loading="lazy" decoding="async" alt="icon" width="38" height="52" aria-hidden="true"> -->
-                      <img class="cs-icon" src="/public/mobile.svg" loading="lazy" decoding="async" alt="icon" width="38" height="52" aria-hidden="true">
+                      <Image class="cs-icon" src={mobile} loading="lazy" decoding="async" alt="icon" width="38" height="52" aria-hidden="true"/>
                   </picture>
                   
                   <h3 class="cs-h3">Mobile-First Design</h3>
@@ -29,7 +36,7 @@
               <a href="" class="cs-link">
                   <picture class="cs-picture">
                       <!-- <img class="cs-icon" src="https://csimg.nyc3.digitaloceanspaces.com/Services/hand.svg" loading="lazy" decoding="async" alt="icon" width="38" height="52" aria-hidden="true"> -->
-                      <img class="cs-icon" src="/public/desktop.svg" loading="lazy" decoding="async" alt="icon" width="38" height="52" aria-hidden="true">
+                      <Image class="cs-icon" src={desktop} loading="lazy" decoding="async" alt="icon" width="38" height="52" aria-hidden="true"/>
                   </picture>
                   <h3 class="cs-h3">Fully Responsive</h3>
                   <p class="cs-item-text">
@@ -41,7 +48,7 @@
               <a href="" class="cs-link">
                   <picture class="cs-picture">
                       <!-- <img class="cs-icon" src="https://csimg.nyc3.digitaloceanspaces.com/Services/paint.svg" loading="lazy" decoding="async" alt="icon" width="38" height="52" aria-hidden="true"> -->
-                      <img class="cs-icon" src="/public/optimization.svg" loading="lazy" decoding="async" alt="icon" width="48" height="52" aria-hidden="true">
+                      <Image class="cs-icon" src={optimization} loading="lazy" decoding="async" alt="icon" width="48" height="52" aria-hidden="true"/>
                   </picture>
                   <h3 class="cs-h3">Optimization</h3>
                   <p class="cs-item-text">

@@ -1,3 +1,7 @@
+---
+import stefano from '../assets/stefano.jpeg'
+import { Image } from 'astro:assets';
+---
 <!-- ============================================ -->
 <!--                   Reviews                    -->
 <!-- ============================================ -->
@@ -17,7 +21,7 @@
               </p>
               <div class="cs-flex-group">
                   <picture class="cs-picture">
-                      <img class="cs-profile" src="public/stefano.jpeg" decoding="async" alt="profile" width="50" height="50" aria-hidden="true">
+                      <Image class="cs-profile" src={stefano} decoding="async" alt="profile" width="50" height="50" aria-hidden="true"/>
                   </picture>
                   <span class="cs-name">
                       Stefano C.

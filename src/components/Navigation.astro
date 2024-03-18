@@ -5,6 +5,8 @@ const hrefAbout = `#${about}`
 const hrefPricing = `#${pricing}`
 const hrefPortfolio = `#${portfolio}`
 const hrefContact = `#${contact}`
+import logoTransparent from '../assets/logo_transparent.png';
+import { Image } from 'astro:assets';
 ---
 
 <!-- ============================================ -->
@@ -15,7 +17,7 @@ const hrefContact = `#${contact}`
   <div class="cs-container">
       <!--Nav Logo-->
       <a href="" class="cs-logo" aria-label="back to home">
-        <img src="public/logo_transparent.png" alt="logo" width="180" height="180" aria-hidden="true" decoding="async">
+        <Image src={logoTransparent} alt="logo" width="180" height="180" aria-hidden="true" decoding="async"/>
     </a>
     
       <!--Navigation List-->

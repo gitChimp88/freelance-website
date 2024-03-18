@@ -1,3 +1,7 @@
+---
+import { Image } from 'astro:assets';
+---
+
 <!-- ============================================ -->
 <!--                   Gallery                    -->
 <!-- ============================================ -->
@@ -12,9 +16,9 @@
           <!-- Image 1 -->
           <div class="cs-item cs-item-1">
               <picture class="cs-picture">
-                  <source media="(max-width: 600px)" srcset="public/recipeWrangleLogo.png">
-                  <source media="(min-width: 601px)" srcset="public/recipeWrangleLogo.png">
-                  <img loading="lazy" decoding="async" src="public/recipeWrangleLogo.png" alt="man grinding steel" width="529" height="256">
+                  <source media="(max-width: 600px)" srcset="https://recipe-wrangle-storage.s3.eu-west-2.amazonaws.com/recipeWrangleLogo.png">
+                  <source media="(min-width: 601px)" srcset="https://recipe-wrangle-storage.s3.eu-west-2.amazonaws.com/recipeWrangleLogo.png">
+                  <Image loading="lazy" decoding="async" src="https://recipe-wrangle-storage.s3.eu-west-2.amazonaws.com/recipeWrangleLogo.png" alt="RecipeWrangle logo" width="529" height="256"/>
               </picture>
               <!-- Hover Box -->
               <div class="cs-hover-box">
@@ -32,9 +36,9 @@
           <!-- Image 2 -->
           <div class="cs-item cs-item-2">
               <picture class="cs-picture">
-                  <source media="(max-width: 600px)" srcset="public/pizza.svg">
-                  <source media="(min-width: 601px)" srcset="public/pizza.svg">
-                  <img loading="lazy" decoding="async" src="public/pizza.svg" alt="wood worker" width="255" height="255">
+                  <source media="(max-width: 600px)" srcset="https://recipe-wrangle-storage.s3.eu-west-2.amazonaws.com/pizza.svg">
+                  <source media="(min-width: 601px)" srcset="https://recipe-wrangle-storage.s3.eu-west-2.amazonaws.com/pizza.svg">
+                  <Image loading="lazy" decoding="async" src="https://recipe-wrangle-storage.s3.eu-west-2.amazonaws.com/pizza.svg" alt="Pizza wallet logo" width="529" height="256"/>
               </picture>
               <!-- Hover Box -->
               <div class="cs-hover-box">
@@ -49,88 +53,10 @@
                   </a>
               </div>
           </div>
-          <!-- Image 3 -->
-          <!-- <div class="cs-item cs-item-3">
-              <picture class="cs-picture">
-                  <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/construction3-m.jpg">
-                  <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/construction3.jpg">
-                  <img aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/construction3.jpg" alt="steel rebar grid" width="255" height="255">
-              </picture>
-          
-              <div class="cs-hover-box">
-                  <h3 class="cs-heading3">Project Name</h3>
-                  <span class="cs-subtitle">Subtitle</span>
-                  <a class="cs-link" aria-label="read more about this project" href="">
-                 
-                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M16.01 11H5C4.45 11 4 11.45 4 12C4 12.55 4.45 13 5 13H16.01V14.79C16.01 15.24 16.55 15.46 16.86 15.14L19.64 12.35C19.83 12.15 19.83 11.84 19.64 11.64L16.86 8.85C16.55 8.53 16.01 8.76 16.01 9.2V11Z" fill="white" />
-                      </svg>
-                      Read more
-                  </a>
-              </div>
-          </div> -->
-          <!-- Image 4 -->
-          <!-- <div class="cs-item cs-item-4">
-              <picture class="cs-picture">
-                  <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/construction4-m.jpg">
-                  <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/construction4.jpg">
-                  <img aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/construction4.jpg" alt="modern home" width="255" height="255">
-              </picture>
-    
-              <div class="cs-hover-box">
-                  <h3 class="cs-heading3">Project Name</h3>
-                  <span class="cs-subtitle">Subtitle</span>
-                  <a class="cs-link" aria-label="read more about this project" href="">
-            
-                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M16.01 11H5C4.45 11 4 11.45 4 12C4 12.55 4.45 13 5 13H16.01V14.79C16.01 15.24 16.55 15.46 16.86 15.14L19.64 12.35C19.83 12.15 19.83 11.84 19.64 11.64L16.86 8.85C16.55 8.53 16.01 8.76 16.01 9.2V11Z" fill="white" />
-                      </svg>
-                      Read more
-                  </a>
-              </div>
-          </div> -->
-          <!-- Image 5 -->
-          <!-- <div class="cs-item cs-item-5">
-              <picture class="cs-picture">
-                  <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/construction5-m.jpg">
-                  <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/construction5.jpg">
-                  <img aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/construction5.jpg" alt="appliance" width="255" height="255">
-              </picture>
-   
-              <div class="cs-hover-box">
-                  <h3 class="cs-heading3">Project Name</h3>
-                  <span class="cs-subtitle">Subtitle</span>
-                  <a class="cs-link" aria-label="read more about this project" href="">
-     
-                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M16.01 11H5C4.45 11 4 11.45 4 12C4 12.55 4.45 13 5 13H16.01V14.79C16.01 15.24 16.55 15.46 16.86 15.14L19.64 12.35C19.83 12.15 19.83 11.84 19.64 11.64L16.86 8.85C16.55 8.53 16.01 8.76 16.01 9.2V11Z" fill="white" />
-                      </svg>
-                      Read more
-                  </a>
-              </div>
-          </div> -->
-          <!-- Image 6 -->
-          <!-- <div class="cs-item cs-item-6">
-              <picture class="cs-picture">
-                  <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/construction6-m.jpg">
-                  <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/construction6.jpg">
-                  <img aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/construction6.jpg" alt="modern home" width="255" height="530">
-              </picture>
-       
-              <div class="cs-hover-box">
-                  <h3 class="cs-heading3">Project Name</h3>
-                  <span class="cs-subtitle">Subtitle</span>
-                  <a class="cs-link" aria-label="read more about this project" href="">
-           
-                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M16.01 11H5C4.45 11 4 11.45 4 12C4 12.55 4.45 13 5 13H16.01V14.79C16.01 15.24 16.55 15.46 16.86 15.14L19.64 12.35C19.83 12.15 19.83 11.84 19.64 11.64L16.86 8.85C16.55 8.53 16.01 8.76 16.01 9.2V11Z" fill="white" />
-                      </svg>
-                      Read more
-                  </a>
-              </div>
-          </div> -->
+  
+      
       </div>
-      <!-- <a href="" class="cs-button-solid">View Full Gallery</a> -->
+     
   </div>
 </section>
                               
@@ -166,26 +92,33 @@
         align-items: center;
     }
 
-   
+ 
     
 
 #gallery-46 .cs-image-group {
     width: 70%;
     margin: 0 auto; /* Center the grid */
-    display: grid;
-    place-content: center;
+  
+    align-items: center; /* Align items horizontally */
+    display: flex; /* Change to flex container */
+    flex-wrap: nowrap; /* Prevent wrapping to next line */
+
+    flex-direction: column; 
+    justify-content: space-between; /* Adjust space between images */
+    align-items: center; /* Align items vertically */
     
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust column size based on available space */
+
     gap: clamp(0.5rem, 1.5vw, 1.25rem);
 }
 
 
 
     #gallery-46 .cs-item {
-        width: 100%;
+        /* width: 100%; */
+        width: 70%;
         margin: 0;
         aspect-ratio: 1;
-        grid-column: span 6;
+      
         display: block;
         position: relative;
         /* prevents image from overflowing the container on hover */
