@@ -1,5 +1,5 @@
 ---
-const { 'aria-label': testimonial, about, pricing, portfolio, contact } = Astro.props;
+const { testimonial, about, pricing, portfolio, contact } = Astro.props;
 const href = `#${testimonial}`;
 const hrefAbout = `#${about}`
 const hrefPricing = `#${pricing}`
@@ -48,7 +48,7 @@ import { Image } from 'astro:assets';
               <a class="cs-nav-link" href={hrefPricing}>Services</a>
           </li>
           <li class="cs-nav-li">
-            <a class="cs-nav-link" href={href}>Testimonial</a>
+            <a class="cs-nav-link" {href}>Testimonial</a>
         </li>
           <li class="cs-nav-li">
               <a class="cs-nav-link" href={hrefPortfolio}>Portfolio</a>
@@ -90,6 +90,10 @@ import { Image } from 'astro:assets';
           <li class="cs-contact-li">
               <a class="cs-contact-link" href="mailto:mike@mikesullivandev.com">mike@mikesullivandev.com</a>
           </li>
+          <li style={{marginTop: "15px"}}class="cs-contact-li">
+            <a class="cs-contact-link" href='https://calendly.com/michaelksullivan50' target='"_blank'>Calendly</a>
+        </li>
+       
       </ul>
   </div>
 </footer>
