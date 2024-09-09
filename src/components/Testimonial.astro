@@ -1,5 +1,6 @@
 ---
 import stefano from '../assets/stefano.jpeg'
+import penimah from '../assets/penimah.jpg'
 import { Image } from 'astro:assets';
 ---
 <!-- ============================================ -->
@@ -31,6 +32,26 @@ import { Image } from 'astro:assets';
           </li>
          
       </ul>
+
+      <ul class="cs-card-group">
+        <li class="cs-item">
+            <!--Blue Quote-->
+            <img class="cs-quote" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/pink-quotes.svg" decoding="async" alt="quote icon" width="120" height="99">
+            <p class="cs-item-text">
+                Mike has done exceptional work on our website for our non-profit. He rebuilt our entire website and made it look more professional and far more functional. He was very patient with our small team who didn't know much about web development. Despite the time zone difference, he was always willing to work with our schedules when our collaboration was needed. Mike heard us out on all of our ideas to make our website the best it can be, as well as offering his own when it was needed or asked for. Our team is so thankful to have found Mike and are very grateful for the work he has done for us.
+            </p>
+            <div class="cs-flex-group">
+                <picture class="cs-picture">
+                    <Image class="cs-profile" src={penimah} decoding="async" alt="profile" width="50" height="50" aria-hidden="true"/>
+                </picture>
+                <span class="cs-name">
+                    Penimah
+                    <span class="cs-job">Animal Activism Mentorship</span>
+                </span>
+            </div>
+        </li>
+       
+    </ul>
   </div>
 </section>
 

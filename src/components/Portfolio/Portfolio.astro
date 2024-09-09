@@ -53,6 +53,27 @@ import { Image } from 'astro:assets';
                   </a>
               </div>
           </div>
+
+             <!-- Image 3 -->
+             <div class="cs-item cs-item-3">
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="https://recipe-wrangle-storage.s3.eu-west-2.amazonaws.com/aam.webp">
+                    <source media="(min-width: 601px)" srcset="https://recipe-wrangle-storage.s3.eu-west-2.amazonaws.com/aam.webp">
+                    <Image loading="lazy" decoding="async" src="https://recipe-wrangle-storage.s3.eu-west-2.amazonaws.com/aam.webp" alt="Pizza wallet logo" width="529" height="256"/>
+                </picture>
+                <!-- Hover Box -->
+                <div class="cs-hover-box">
+                    <h3 class="cs-heading3">Animal Activism Mentorship</h3>
+                    <span class="cs-subtitle"></span>
+                    <a class="cs-link" aria-label="read more about this project" href="https://www.animalactivismmentorship.com/" target='_blank'>
+                        <!-- SVG Arrow-->
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.01 11H5C4.45 11 4 11.45 4 12C4 12.55 4.45 13 5 13H16.01V14.79C16.01 15.24 16.55 15.46 16.86 15.14L19.64 12.35C19.83 12.15 19.83 11.84 19.64 11.64L16.86 8.85C16.55 8.53 16.01 8.76 16.01 9.2V11Z" fill="white" />
+                        </svg>
+                        AAM Website
+                    </a>
+                </div>
+            </div>
   
       
       </div>
@@ -168,7 +189,7 @@ import { Image } from 'astro:assets';
         grid-row: 1 / 2;
         aspect-ratio: 2.07594937;
     }
-    /* #gallery-46 .cs-item-2 {
+    #gallery-46 .cs-item-2 {
         grid-column: 1 / span 12;
         grid-row: 1 / 2;
         aspect-ratio: 2.07594937;
@@ -177,7 +198,7 @@ import { Image } from 'astro:assets';
         grid-column: 1 / span 12;
         grid-row: 1 / 2;
         aspect-ratio: 2.07594937;
-    } */
+    } 
     /* #gallery-46 .cs-item-5 {
         grid-column: 7 / span 6;
         grid-row: 3 / span 2;
